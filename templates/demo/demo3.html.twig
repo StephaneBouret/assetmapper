@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Demo3
+{% endblock %}
+
+{% block body %}
+	<h1>Demo 3</h1>
+{% endblock %}
+
+{% block importmap %}
+	{# do NOT call parent() #}
+
+	{{ importmap(['app', 'checkout']) }}
+{% endblock %}
